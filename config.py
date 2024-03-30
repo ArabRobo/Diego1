@@ -11,7 +11,7 @@ from logging.handlers import RotatingFileHandler
 load_dotenv("config.env")
 
 # Bot token dari @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6915841293:AAFAWXpyasPPO4HdypihnjDk-UK7IsEHORY")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6557252890:AAGHWi1zWyotyUlz5haUxR1PJYMWoa5E81w")
 
 # API ID Anda dari my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "26730559"))
@@ -20,7 +20,7 @@ APP_ID = int(os.environ.get("APP_ID", "26730559"))
 API_HASH = os.environ.get("API_HASH", "54e0fd326f54b4ea91fdcbdf98e3cf4e")
 
 # ID Channel Database
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002054559749"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002078740734"))
 
 # NAMA OWNER
 OWNER = os.environ.get("OWNER", "Arabnihnge")
@@ -39,8 +39,8 @@ UPSTREAM_BRANCH = os.environ.get("UPSTREAM_BRANCH", "master")
 DB_URI = os.environ.get("DATABASE_URL", "postgres://kfnpbltj:8HA2oTrv95OD2hX5tMmbNeIuQK7Q3QYz@stampy.db.elephantsql.com/kfnpbltj")
 
 # ID dari Channel Atau Group Untuk Wajib Subscribenya
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002017004807"))
-FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1002146068740"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002025326453"))
+FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1002133655295"))
 
 # Tulisan joinnya mau gimana
 BUTTONS_JOIN_TEXT = os.environ.get("BUTTONS_JOIN_TEXT", "ᴊᴏɪɴ ᴅᴜʟᴜ")
@@ -54,7 +54,7 @@ START_MSG = os.environ.get(
     "<b>Hello {first}</b>\n\n<b>Saya dapat menyimpan file pribadi di Channel Tertentu dan pengguna lain dapat mengaksesnya dari link khusus.</b>",
 )
 try:
-    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "6804954737").split())]
+    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "5760118585").split())]
 except ValueError:
     raise Exception("Daftar Admin Anda tidak berisi User ID Telegram yang valid.")
 
@@ -70,9 +70,7 @@ CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 # Setel True jika Anda ingin Menonaktifkan tombol Bagikan Kiriman Saluran Anda
 DISABLE_CHANNEL_BUTTON = strtobool(os.environ.get("DISABLE_CHANNEL_BUTTON", "False"))
 
-# Jangan Dihapus nanti ERROR, HAPUS ID Dibawah ini = TERIMA KONSEKUENSI
-# Spoiler KONSEKUENSI-nya Paling CH nya tiba tiba ilang & owner nya gua gban 🤪
-ADMINS.extend((844432220, 1250450587, 1750080384, 182990552, 1948147616, 1948147616))
+
 
 
 LOG_FILE_NAME = "logs.txt"
